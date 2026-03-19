@@ -1,0 +1,11 @@
+Model Information:
+* title:	Peony Flowers
+* source:	https://sketchfab.com/3d-models/peony-flowers-3e58bdf48a48496b95ac1bfbb0d86f14
+* author:	AaronABC (https://sketchfab.com/AaronABC)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Peony Flowers" (https://sketchfab.com/3d-models/peony-flowers-3e58bdf48a48496b95ac1bfbb0d86f14) by AaronABC (https://sketchfab.com/AaronABC) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
