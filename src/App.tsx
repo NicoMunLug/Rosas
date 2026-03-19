@@ -18,7 +18,7 @@ function App() {
               <div className="flex items-center justify-center md:justify-start space-x-3">
                 <Heart className="w-8 h-8 text-pink-500 animate-heartbeat fill-pink-500" />
                 <h2 className="text-5xl md:text-6xl font-semibold text-pink-600">
-                  Juanita Bonita
+                  I Bonita
                 </h2>
                 <Heart className="w-8 h-8 text-pink-500 animate-heartbeat fill-pink-500" style={{ animationDelay: '0.3s' }} />
               </div>

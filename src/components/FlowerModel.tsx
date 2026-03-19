@@ -43,7 +43,7 @@ export default function FlowerModel() {
     const loader = new GLTFLoader();
 
     loader.load(
-      `${import.meta.env.BASE_URL}scene.gltf`,
+      `${import.meta.env.BASE_URL}Rose.gltf`,
       (gltf) => {
         const model = gltf.scene;
 
