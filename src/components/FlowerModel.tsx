@@ -47,17 +47,31 @@ export default function FlowerModel() {
       (gltf) => {
         const model = gltf.scene;
 
-        model.scale.set(5, 5, 5);
-        model.position.set(0, -2.4, 0);
+        model.scale.set(0.1, 0.1, 0.1);
+        model.position.set(0, -1.7, 0);
 
         model.traverse((child: any) => {
           if (child.isMesh) {
             child.castShadow = true;
             child.receiveShadow = true;
-            // Asegurar que las texturas se carguen correctamente
-            if (child.material && child.material.map) {
-              child.material.map.needsUpdate = true;
-            }
+        
+            // Asignar textura base color
+            const baseColorTexture = new THREE.TextureLoader().load(`${import.meta.env.BASE_URL}textures/1_Base_color.png`);
+            child.material.map = baseColorTexture;
+        
+            // Asignar textura normal
+            const normalTexture = new THREE.TextureLoader().load(`${import.meta.env.BASE_URL}textures/1_Normal.png`);
+            child.material.normalMap = normalTexture;
+        
+            // Asignar textura metallic
+            const metallicTexture = new THREE.TextureLoader().load(`${import.meta.env.BASE_URL}textures/1_Metallic.png`);
+            child.material.metalnessMap = metallicTexture;
+        
+            // Asignar textura roughness
+            const roughnessTexture = new THREE.TextureLoader().load(`${import.meta.env.BASE_URL}textures/1_Roughness.png`);
+            child.material.roughnessMap = roughnessTexture;
+        
+            child.material.needsUpdate = true;
           }
         });
 
